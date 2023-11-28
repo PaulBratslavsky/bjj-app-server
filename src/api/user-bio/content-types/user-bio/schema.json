@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_bios",
+  "info": {
+    "singularName": "user-bio",
+    "pluralName": "user-bios",
+    "displayName": "User Bio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "belt": {
+      "type": "enumeration",
+      "enum": [
+        "WHITE",
+        "BLUE",
+        "PURPLE",
+        "BROWN",
+        "BLACK"
+      ]
+    },
+    "stripes": {
+      "type": "enumeration",
+      "enum": [
+        "ONE",
+        "TWO",
+        "THREE",
+        "FOUR"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "bio"
+    }
+  }
+}
