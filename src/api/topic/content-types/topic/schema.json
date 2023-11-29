@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topics",
+  "info": {
+    "singularName": "topic",
+    "pluralName": "topics",
+    "displayName": "Topic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "user_bio": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-bio.user-bio"
+    }
+  }
+}
