@@ -760,7 +760,7 @@ export interface ApiTopicTopic extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     description: Attribute.String;
-    public: Attribute.Boolean;
+    public: Attribute.Boolean & Attribute.DefaultTo<true>;
     user_bio: Attribute.Relation<
       'api::topic.topic',
       'oneToOne',

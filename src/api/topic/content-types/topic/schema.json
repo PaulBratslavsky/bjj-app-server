@@ -19,7 +19,8 @@
       "type": "string"
     },
     "public": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "user_bio": {
       "type": "relation",
