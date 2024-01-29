@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * lesson service
+ * content service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::lesson.lesson');
+module.exports = createCoreService('api::content.content');

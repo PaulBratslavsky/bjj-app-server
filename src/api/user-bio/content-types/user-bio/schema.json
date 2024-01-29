@@ -53,6 +53,18 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "mappedBy": "bio"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "userBio"
+    },
+    "content": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content",
+      "mappedBy": "userBio"
     }
   }
 }
