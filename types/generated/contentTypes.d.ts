@@ -416,7 +416,7 @@ export interface ApiContentContent extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    type: Attribute.Enumeration<['VIDEO', 'POST']>;
+    type: Attribute.Enumeration<['VIDEO', 'POST', 'LESSON']>;
     heading: Attribute.String;
     content: Attribute.Text;
     videoUrl: Attribute.String;

@@ -16,7 +16,8 @@
       "type": "enumeration",
       "enum": [
         "VIDEO",
-        "POST"
+        "POST",
+        "LESSON"
       ]
     },
     "heading": {
